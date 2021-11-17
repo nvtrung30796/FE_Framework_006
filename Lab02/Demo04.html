@@ -26,7 +26,7 @@
             // Load data for DropDownList From/To currency
             $.ajax({
                 url: `https://api.fastforex.io/currencies?api_key=${key}`,
-                method: "GET",
+                type: "GET",
                 dataType: "json"
             }).done(function (data) {
                 Object.entries(data.currencies).forEach(function (item) {
